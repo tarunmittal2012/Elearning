@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="elearn.prodesc"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:elearn"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Black" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Project Details" Foreground="White" FontSize="35" TextAlignment="Center" Grid.RowSpan="2"></TextBlock>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.RowSpan="2">
+            <StackPanel>
+                <RelativePanel>
+
+                    <Button Name="b1" Click="b1_Click" Content="back" Foreground="White" RelativePanel.AlignRightWithPanel="True"></Button>
+                </RelativePanel>
+
+            </StackPanel>
+        </ScrollViewer>
+        <TextBlock FontFamily="times new roman" FontSize="25" Text="Microsoft App and Chrome Extension" Margin="12,80,-19,0" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White"></TextBlock>
+        <TextBlock FontFamily="times new roman" FontSize="25" Text="E-Learning" Margin="12,150,-19,0" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White"></TextBlock>
+        <Image Source="elogo.png" HorizontalAlignment="Center" Height="70" Margin="108,205"></Image>
+        <TextBlock FontFamily="times new roman" FontSize="15" Text="All right reserved" Foreground="White" Margin="108,295,108,0" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
+        <TextBlock FontFamily="times new roman" FontSize="25" Text="Developed By" Foreground="White" Margin="108,355,108,0" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
+        <TextBlock FontFamily="times new roman" FontSize="25" Text="Tarun Mittal" Foreground="White" Margin="111,385,110,0" FontWeight="ExtraBold"  TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" ></TextBlock>
+        <TextBlock FontFamily="times new roman" FontSize="25" Text="LPU B.Tech CSE Student" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="50 425,50,0" Grid.RowSpan="2"></TextBlock>
+        
+    </Grid>
+</Page>

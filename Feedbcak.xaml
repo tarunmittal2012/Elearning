@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="elearn.Feedbcak"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:elearn"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="DarkSlateBlue">
+        
+        <StackPanel >
+            <RelativePanel>
+                <Button Content="" Background="Black" FontSize="20" FontFamily="segoe mdl2 assets" Name="b1" Click="b1_Click" Foreground="White"  RelativePanel.AlignRightWithPanel="True"></Button>
+            </RelativePanel>
+            <StackPanel Background="Black">
+                <TextBlock FontFamily=" Segoe mdl2 assets" Text="  " FontSize="35" Foreground="White" ></TextBlock>
+                <TextBlock Text=" Feedback Form" FontFamily="times new roman" Foreground="White" Margin="50 -40" FontSize="35" ></TextBlock>
+            </StackPanel>
+
+            <TextBlock Text="Enter Email" Foreground="White" FontSize="25" Margin=" 0 20 0 0"></TextBlock>
+            <TextBox Name="l"  BorderBrush="Purple" Width="350" Margin="-50,0"/>
+            <TextBlock Text="Give Feedback"  FontWeight="Bold" Foreground="White" FontSize="25" Margin="0 80" FontFamily="times new roman"></TextBlock>
+
+            <TextBlock Text="Overall,How do you feel about the service received?" Foreground="White" FontSize="25" Margin="0 -30" FontFamily="times new roman"></TextBlock>
+            <RadioButton Content="Very Satisfied" FontFamily="times new roman" Foreground="White" Margin="0 25"></RadioButton>
+            <RadioButton Content="Satisfied" FontFamily="times new roman" Foreground="White" Margin="0 -15"></RadioButton>
+            <RadioButton Content="Neither Satisfied or Dissatisfied" FontFamily="times new roman" Foreground="White" Margin="0 19"></RadioButton>
+            <RadioButton Content="Dissatisfied" FontFamily="times new roman" Foreground="White" Margin="0 -18"></RadioButton>
+            <RadioButton Content="Very Dissatisfied" FontFamily="times new roman" Foreground="White" Margin="0 20"></RadioButton>
+            <TextBlock Text="How could we improve the service?" FontWeight="Bold"  Foreground="White" FontSize="25" Margin="0 0" FontFamily="times new roman"></TextBlock>
+            <TextBox Text="" Background="White" BorderBrush="White" Height="80" HorizontalAlignment="Left" Width="600" FontFamily="times new roman" Foreground="Black" Margin="0 20" ></TextBox>
+            <TextBlock Text="(Limit is 800 Character)" HorizontalAlignment="Left"  FontWeight="Bold"  Foreground="White" FontSize="15" Margin="0 -18" FontFamily="times new roman"></TextBlock>
+            <TextBlock Text="Dont't Include any financial Information such as National Insurance or credit card" FontWeight="Bold"  Foreground="White" FontSize="25" Margin="0 10" FontFamily="times new roman"></TextBlock>
+
+        </StackPanel>
+
+    </Grid>
+</Page>

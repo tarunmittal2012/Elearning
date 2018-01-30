@@ -1,0 +1,144 @@
+﻿<Page
+    x:Class="elearn.engine"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:elearn"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" >
+
+
+    <VisualStateManager.VisualStateGroups>
+        <VisualStateGroup x:Name="Window">
+            <VisualState x:Name="Laptop">
+                <VisualState.StateTriggers>
+                    <AdaptiveTrigger MinWindowWidth="600"/>
+                </VisualState.StateTriggers>
+                <VisualState.Setters>
+
+
+                </VisualState.Setters>
+
+
+            </VisualState>
+            <VisualState x:Name="Mobile">
+                <VisualState.StateTriggers>
+                    <AdaptiveTrigger MinWindowWidth="0"/>
+                </VisualState.StateTriggers>
+                <VisualState.Setters>
+                    <Setter Target="s2.(Grid.Column)" Value="0"></Setter>
+                    <Setter Target="s2.(Grid.Row)" Value="1"></Setter>
+                    <Setter Target="s3.(Grid.Column)" Value="0"></Setter>
+                    <Setter Target="s3.(Grid.Row)" Value="2"></Setter>
+                    <Setter Target="s4.(Grid.Column)" Value="0"></Setter>
+                    <Setter Target="s4.(Grid.Row)" Value="3"></Setter>
+                    <Setter Target="s5.(Grid.Column)" Value="0"></Setter>
+                    <Setter Target="s5.(Grid.Row)" Value="4"></Setter>
+                    <Setter Target="s6.(Grid.Column)" Value="0"></Setter>
+                    <Setter Target="s6.(Grid.Row)" Value="5"></Setter>
+                    <Setter Target="s7.(Grid.Column)" Value="0"></Setter>
+                    <Setter Target="s7.(Grid.Row)" Value="6"></Setter>
+                    <Setter Target="s8.(Grid.Column)" Value="0"></Setter>
+                    <Setter Target="s8.(Grid.Row)" Value="7"></Setter>
+                </VisualState.Setters>
+
+            </VisualState>
+        </VisualStateGroup>
+    </VisualStateManager.VisualStateGroups>
+    <ScrollViewer>
+
+        <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="ab.jpg"></ImageBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MinHeight="720" />
+            <RowDefinition Height="0*" />
+
+        </Grid.RowDefinitions>
+        
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+               
+                <TextBlock Text="Select Engineering Stream" Foreground="white" HorizontalAlignment="Center" FontSize="35" FontFamily="times new roman"  Width="373" Grid.Column="1" Grid.ColumnSpan="3" Margin="294,0,293,0"></TextBlock>
+                <StackPanel Name="s1" Grid.Column="3" >
+                    <RelativePanel>
+
+                        <Button Content="Back" Name="c1" Click="c1_Click" Foreground="White" RelativePanel.AlignRightWithPanel="True" ></Button>
+                    </RelativePanel>
+                </StackPanel>
+
+                <StackPanel Name="s2" Orientation="Horizontal" Grid.Row="1" Grid.Column="0" >
+                    <Button Content="CSE" x:Name="l" Click="l_Click"  Height="240" Width="250" Foreground="Red" Margin="0,5,0,75" >
+                        <Button.Background>
+                            <ImageBrush ImageSource="cse.png"/>
+                        </Button.Background>
+                    </Button>
+                </StackPanel>
+                <StackPanel Name="s3" Grid.Row="1" Grid.Column="1" >
+                    <Button Content="ECE"  Name="ec" Click="ec_Click" Height="250" Width="250" Foreground="Red">
+                        <Button.Background>
+                            <ImageBrush ImageSource="ece.png"/>
+                        </Button.Background>
+                    </Button>
+
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="2">
+                    <Button Content="civil" Name="c" Click="c_Click" Height="250" Width="250" Foreground="Red">
+                        <Button.Background>
+                            <ImageBrush ImageSource="civil.png"/>
+                        </Button.Background>
+                    </Button>
+                </StackPanel>
+                <StackPanel Grid.Column="3" Grid.Row="1">
+                    <Button Content="Mechanical"  Height="250" Width="250" Foreground="Red">
+                        <Button.Background>
+                            <ImageBrush ImageSource="mec2.png"/>
+                        </Button.Background>
+                    </Button>
+                </StackPanel>
+
+                <StackPanel Grid.Column="0" Grid.Row="2">
+                    <Button Content="electrical" Foreground="red" Height="250" Width="250" Name="ele" Click="ele_Click" >
+                        <Button.Background>
+                            <ImageBrush ImageSource="ele.png"/>
+                        </Button.Background>
+                    </Button>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Grid.Column="1">
+                    <Button Content="chemical" Foreground="red" Name="vc" Click="vc_Click"  Height="250" Width="250" >
+                        <Button.Background>
+                            <ImageBrush ImageSource="che.png"/>
+                        </Button.Background>
+                    </Button>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Grid.Column="2">
+                    <Button Content="Aeronautical" Name="ld" Click="ld_Click"  Height="250" Width="250" Foreground="Red">
+                        <Button.Background>
+                            <ImageBrush ImageSource="aero.jpg"/>
+                        </Button.Background>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        
+    </Grid>
+    </ScrollViewer>
+</Page>
